@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Big-Shoulders-Display-font:'Big Shoulders Display';
+    --Lexend-Deca-font:'Lexend Deca';
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs-color:hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+body{
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--Lexend-Deca-font);
+}
+main{
+    max-width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px 20px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+.icon{
+    width: fit-content;
+}
+h2{
+    text-transform:uppercase;
+    color: var(--light-gray);
+    font-family: var(--Big-Shoulders-Display-font);
+    margin: 33px 0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+p{
+    color: var(--paragraphs-color);
+    
+    font-weight: 400;
+    line-height: 1.8;
+}
+.card{
+    padding: 42px;
+}
+.sedan-car{
+    background-color: var(--Bright-orange);
+}
+.suvs-car{
+    background-color: var(--Dark-cyan);
+}
+.luxury-car{
+    background-color: var(--Very-dark-cyan);
+}
+main a{
+    display: block;
+    text-align: center;
+    background-color: var(--light-gray);
+    font-weight:700 ;
+    padding: 14px 32px;
+    border-radius: 50px;
+    margin-top: 82px;
+    width: fit-content;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px solid var(--light-gray);
+}
+main .sedan-car a{
+    color: var(--Bright-orange);
+}
+main .suvs-car a{
+    color: var(--Dark-cyan);
+}
+main .luxury-car a{
+    color: var(--Very-dark-cyan);
+}
+main  a:hover{
+    transition: all 0.2s;
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+}
+main .sedan-car a:hover{
+    background-color: var(--Bright-orange);
+}
+main .suvs-car a:hover{
+    background-color: var(--Dark-cyan);
+}
+main .luxury-car a:hover{
+    background-color: var(--Very-dark-cyan);
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color:var(--Bright-orange);
+}
+@media(min-width:768px){
+    .sedan-car{
+        background-color: var(--Bright-orange);
+        flex: 2;
+    }
+    .suvs-car{
+        background-color: var(--Dark-cyan);
+        flex: 2;
+    }
+}
+@media (min-width:992px){
+    .sedan-car{
+        flex: 1;
+    }
+    .suvs-car{
+        flex: 1;
+    }
+    .luxury-car{
+        flex: 1;
+    }
+    main{
+        margin: 0;
+    }
+}
+
+/*happy coding*/
