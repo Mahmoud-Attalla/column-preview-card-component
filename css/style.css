@@ -42,18 +42,18 @@ h2{
     text-transform:uppercase;
     color: var(--light-gray);
     font-family: var(--Big-Shoulders-Display-font);
-    margin: 33px 0;
+    margin: 35px 0 28px;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 p{
     color: var(--paragraphs-color);
-    
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.55rem;
+    font-size: 15px;
 }
 .card{
-    padding: 42px;
+    padding: 50px 48px 47px 48px;
 }
 .sedan-car{
     background-color: var(--Bright-orange);
@@ -69,9 +69,9 @@ main a{
     text-align: center;
     background-color: var(--light-gray);
     font-weight:700 ;
-    padding: 14px 32px;
+    padding: 12px 30px;
     border-radius: 50px;
-    margin-top: 82px;
+    margin-top: 80px;
     width: fit-content;
     text-transform: capitalize;
     font-size: 15px;
@@ -132,5 +132,4 @@ main .luxury-car a:hover{
         margin: 0;
     }
 }
-
 /*happy coding*/
